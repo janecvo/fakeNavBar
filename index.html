@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeNavigationBar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav {
+            background-color: black;
+            height: 100px;
+            width: 900px;
+        }
+        nav ul{
+            height: 75px;
+            width: 404px; 
+        }
+        nav ul li{
+            list-style-type: none;
+            width: 75px;
+            float: left;
+            text-align: center;
+            font-family: serif;
+        }
+        li a {
+            text-decoration:none;
+            color: white;
+            line-height: 100px;
+            display: block
+        }
+        .CFH{
+            background-color: purple;
+            font-size: 30px;
+        }
+        .search-container{ 
+            display:flex;
+            justify-content: left;
+            align-items: center; 
+            margin-bottom: 20px;
+            height: 10px;
+         }
+        .nav-right{
+            /* background-color: black; */
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            margin: 40px;
+
+        }
+        .cart{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+        .link:link, .link:visited, .link:hover, .link:active {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .inlineBlock {
+            display: inline-block;
+        }
+        .x {
+            display:flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="x inlineBlock">
+    <div class="inlineBlock">
+        <ul>
+        <li><a class=CFH href="#">CFH</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Google</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>  
+    <div class="search-container inlineBlock">
+        <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i><img src=http://www.clker.com/cliparts/n/U/H/1/H/u/search-icon-white-one-hi.png width="20px" height="20px">
+        </button>
+        </form>
+    </div>  
+    <div class="nav-right inlineBlock">
+        <div class="cart">
+        <a class="link" href="#">LOGIN/DIRECTIONS</a>
+        <div>
+        <a class="link" href="#">VIEW CART</a><img src="https://ak8.picdn.net/shutterstock/videos/1006608868/thumb/7.jpg" width="30px" height="20px">
+        </div>
+        </div>
+    </div>
+    </nav>   
+</body>
+</html>
